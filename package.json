@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "tsc",
+    "build": "pnpm -r run build",
     "start": "node index.js",
     "dev": "tsc && node index.js"
   },
