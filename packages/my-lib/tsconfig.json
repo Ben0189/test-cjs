@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2019",                // modern JS output
+    "lib": ["ES2019"],                 // standard library
+
+    /* Module System */
+    "module": "CommonJS",              // 👈 compile to CJS (require/exports)
+    "moduleResolution": "node",        
+
+    /* Output */
+    "outDir": "dist",                  // compiled JS goes here
+    "declaration": true,               // generate .d.ts for consumers
+    "declarationMap": true,            // link .d.ts back to .ts
+    "sourceMap": true,                 // sourcemaps for debugging
+    "esModuleInterop": true,           // allows `import fs from "fs"`
+
+    /* Strictness */
+    "strict": true,                    
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],                  // compile everything in src/
+  "exclude": ["dist", "node_modules"]  // don’t recompile outputs/deps
+}
