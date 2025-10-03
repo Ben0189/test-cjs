@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.json",   // inherit root settings
   "compilerOptions": {
+    "module": "ESNext",                // compile to ESM
     "rootDir": "src",                 // where source lives
     "outDir": "dist",                 // compiled JS output
     "declaration": true,               // generate .d.ts files
