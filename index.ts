@@ -1,4 +1,4 @@
-import { add, greet } from "./packages/my-lib/dist";
+import { greet, add } from "my-lib";
 
-console.log(greet("CJS Monorepo")); // Hello, CJS Monorepo!
-console.log(add(2, 3));             // 5
+console.log(greet("CJS Monorepo"));
+console.log(add(2, 3));            
